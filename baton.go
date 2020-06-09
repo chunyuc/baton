@@ -163,7 +163,7 @@ func processResults(baton *Baton, preparedRunConfiguration runConfiguration) {
 	baton.result.requestsPerSecond = int(float64(baton.result.totalRequests)/baton.result.timeTaken.Seconds() + 0.5)
 
 	//Find new min and max
-	min := math.MaxInt64
+	min := math.MaxInt32
 	max := 0
 	for b := 0; b < len(baton.result.httpResult.responseTimes); b++ {
 		if baton.result.httpResult.responseTimes[b] < min {
