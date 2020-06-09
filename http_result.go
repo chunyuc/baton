@@ -35,7 +35,7 @@ type HTTPResult struct {
 }
 
 func newHTTPResult() *HTTPResult {
-	return &HTTPResult{0, 0, 0, 0, 0, 0, 0, math.MaxInt64, 0, 0, make([]int, 0), make([][3]int, 0)}
+	return &HTTPResult{0, 0, 0, 0, 0, 0, 0, math.MaxInt32, 0, 0, make([]int, 0), make([][3]int, 0)}
 }
 
 func (httpResult HTTPResult) total() int {
